@@ -41,6 +41,6 @@ tmp = pd.concat([part_1_2_not_unique,no_unique_part[['vid','table_id','field_res
 # 行列转换
 print('finish')
 tmp = tmp.pivot(index='vid',values='field_results',columns='table_id')
-tmp.to_csv('./tmp.csv')
+tmp.to_csv('../../data/aliyun_meinian/tmp.csv')
 print(tmp.shape)
 print('totle time',time.time() - begin_time)
